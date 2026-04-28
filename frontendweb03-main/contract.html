@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Teewasu SAU</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-border {
+            border-bottom: 2px solid #3b82f6;
+        }
+
+        /* สไตล์พิเศษสำหรับ Glow Effect ของไอคอน */
+        .icon-glow {
+            filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2));
+            transition: all 0.3s ease;
+        }
+
+        .icon-glow:hover {
+            filter: drop-shadow(0 0 25px rgba(59, 130, 246, 0.5));
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="flex items-center justify-between px-10 py-6 gradient-border">
+        <div class="text-2xl font-bold">Teewasu <span class="text-white">SAU</span></div>
+        <div class="hidden md:flex items-center gap-20">
+            <a href="index.html" class="hover:text-yellow-400 transition">Home</a>
+            <a href="about.html" class="hover:text-yellow-400 transition">About</a>
+            <a href="portfolio.html" class="hover:text-yellow-400 transition">Portfolio</a>
+        </div>
+        <button
+            class="text-yellow-400 border border-yellow-400 rounded-full px-6 py-2 hover:bg-yellow-400 hover:text-black transition">
+            Let's talk
+        </button>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-10 py-20">
+        <h2 class="text-5xl font-serif font-bold mb-32">Contact</h2>
+
+        <div class="text-center space-y-4 mb-24">
+            <h3 class="text-3xl font-serif font-bold italic">Let's Connect</h3>
+            <p class="text-gray-400 text-lg">Don't be a stranger! Say hello and let's collaborate</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16 text-center">
+
+            <div class="flex flex-col items-center space-y-6">
+                <div class="icon-glow w-24 h-24 flex items-center justify-center">
+                    <i class="fas fa-envelope text-5xl text-gray-300"></i>
+                </div>
+                <p class="text-gray-300 font-medium">teewasu1415@gmail.com</p>
+            </div>
+
+            <div class="flex flex-col items-center space-y-6">
+                <div class="icon-glow w-24 h-24 flex items-center justify-center">
+                    <i class="fas fa-map-marker-alt text-5xl text-gray-300"></i>
+                </div>
+                <p class="text-gray-300 font-medium">Thailand, Bangkok</p>
+            </div>
+
+            <div class="flex flex-col items-center space-y-6">
+                <div class="icon-glow w-24 h-24 flex items-center justify-center">
+                    <i class="fab fa-linkedin text-5xl text-gray-300"></i>
+                </div>
+                <p class="text-gray-300 font-medium">Teewasu SAU</p>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
